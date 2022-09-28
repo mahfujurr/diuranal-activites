@@ -1,0 +1,38 @@
+[
+  {
+    "id": "633468c5bd1a5297dfe38408",
+    "name": "Salah",
+    "time": "10",
+    "picture": "http://placehold.it/32x32"
+  },
+  {
+    "id": "633468c5bd1a5297dfe38408",
+    "name": "Study",
+    "time": "120",
+    "picture": "http://placehold.it/32x32"
+  },
+  {
+    "id": "633468c5bd1a5297dfe38408",
+    "name": "Breakfast",
+    "time": "15",
+    "picture": "http://placehold.it/32x32"
+  },
+  {
+    "id": "633468c5bd1a5297dfe38408",
+    "name": "Work",
+    "time": "300",
+    "picture": "http://placehold.it/32x32"
+  },
+  {
+    "id": "633468c5bd1a5297dfe38408",
+    "name": "Walking",
+    "time": "60",
+    "picture": "http://placehold.it/32x32"
+  },
+  {
+    "id": "633468c5bd1a5297dfe38408",
+    "name": "Sleeping",
+    "time": "360",
+    "picture": "http://placehold.it/32x32"
+  }
+]
