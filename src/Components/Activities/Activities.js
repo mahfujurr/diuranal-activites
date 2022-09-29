@@ -2,7 +2,6 @@
 import './Activities.css'
 const Activities = (props) => {
     const { name, time, picture } = props.activity;
-    //console.log(props.activity)
     
     return (
         <div className='bg-gray-200 rounded-lg'>

@@ -18,7 +18,7 @@ const Info = ({info}) => {
                 <img className='rounded-full w-1/4' src={image} alt="" srcset="" />
                 <div className='ml-3'>
                     <h3 className='font-bold'>Light Yagami</h3>
-                    <h4 className='font-light'><i class="fa-solid fa-location-dot"></i> Tokyo, Japan</h4>
+                    <h4 className='font-light'><i class="fa-solid fa-location-dot"></i> Tokyo, Japan </h4>
                 </div>
             </div>
                 <div className='flex justify-between m-3 bg-rose-200 p-3 rounded-lg'>
