@@ -48,6 +48,9 @@ const Component = () => {
                                 ))
                         }
                     </div>
+                </div>
+                <div>
+                    <Blog></Blog>
                 </div>           
             </div>
 
@@ -56,9 +59,7 @@ const Component = () => {
                 info ={info}
                 ></Info>
             </div>
-            <div>
-                <Blog></Blog>
-            </div>
+            
 
         </div>
     );

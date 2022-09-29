@@ -32,7 +32,7 @@ const Info = ({info}) => {
     };
 
     return (
-        <div className='px-3'>
+        <div className='px-3 fixed'>
             <div className='flex items-center'>
                 <img className='rounded-full w-1/4' src={image} alt="" srcset="" />
                 <div className='ml-3'>
@@ -71,11 +71,11 @@ const Info = ({info}) => {
                     20
                 </button> 
                 <button className='bg-rose-200 rounded-full p-4 px-5 text-rose-400 hover:text-white hover:bg-rose-700'
-                        onClick={(e)=>{timeHandle(e.target.innerText)} }>
+                        onClick={(e)=>{timeHandle(e.target.innerText)}}>
                     30
                 </button> 
                 <button className='bg-rose-200 rounded-full p-4 px-5 text-rose-400 hover:text-white hover:bg-rose-700'
-                        onClick={(e)=>{timeHandle(e.target.innerText)} }>
+                        onClick={(e)=>{timeHandle(e.target.innerText)}}>
                     60
                 </button> 
                  
