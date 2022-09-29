@@ -5,6 +5,7 @@ import Info from '../Info/Info';
 import './Component.css';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Blog from '../Blog/Blog';
 
 
 
@@ -55,7 +56,10 @@ const Component = () => {
                 info ={info}
                 ></Info>
             </div>
-            
+            <div>
+                <Blog></Blog>
+            </div>
+
         </div>
     );
 };
