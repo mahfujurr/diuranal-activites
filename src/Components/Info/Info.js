@@ -12,7 +12,6 @@ const Info = ({info}) => {
         totalTime = totalTime + parseInt(selectedInfo.time);
         
     }
-    //console.log(totalTime)
     return (
         <div className='px-3'>
             <div className='flex items-center'>
