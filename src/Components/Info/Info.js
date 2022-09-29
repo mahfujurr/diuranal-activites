@@ -28,11 +28,10 @@ const Info = ({info}) => {
 
     const activityCompleted = () =>{
         toast.success('Activity Completed successfully');
-        console.log('clicked')
     };
 
     return (
-        <div className='px-3 fixed'>
+        <div className='px-3 lg:fixed'>
             <div className='flex items-center'>
                 <img className='rounded-full w-1/4' src={image} alt="" srcset="" />
                 <div className='ml-3'>
