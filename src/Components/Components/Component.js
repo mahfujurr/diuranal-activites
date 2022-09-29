@@ -2,7 +2,10 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import Activities from '../Activities/Activities';
 import Info from '../Info/Info';
-import './Component.css'
+import './Component.css';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const Component = () => {
@@ -19,7 +22,7 @@ const Component = () => {
     const addToInfo = (selectedInfo) =>{
         const newInfo = [...info, selectedInfo]
         setInfo(newInfo);
-        
+        toast.success('Activity time added successfully');   
     }
     
     return (

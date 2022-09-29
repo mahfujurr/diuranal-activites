@@ -1,5 +1,6 @@
-
 import './Activities.css'
+import { ToastContainer } from 'react-toastify';
+
 const Activities = (props) => {
     const { name, time, picture } = props.activity;
     
@@ -12,6 +13,7 @@ const Activities = (props) => {
                     <p className='px-5'>Time: {time} minutes</p>
                     <div className='flex justify-center my-3'>
                         <button onClick={()=>{props.addToInfo(props.activity)}} className='w-4/5 p-3 rounded-lg bg-rose-400 font-bold text-white hover:bg-rose-600'>Add to list <i class="fa-solid fa-circle-arrow-right"></i></button>
+                        <ToastContainer />
                     </div>
                 </div>
             </div>

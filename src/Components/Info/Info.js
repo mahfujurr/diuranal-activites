@@ -1,11 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Info.css'
 import image from '../../img/Capture.JPG'
+
 const Info = ({info}) => {
     const [breakTime, setBreakTime] = useState([]);
+
+    useEffect(()=>{
+        
+        const items = JSON.parse(localStorage.getItem("Key"));
+        setBreakTime(items);
+    } ,[]);
+
     const timeHandle =(props)=>{
+        localStorage.setItem("Key" , JSON.stringify(props));
         setBreakTime(props);
-    }
+    };
 
     let totalTime = 0;
     for (const selectedInfo of info){
