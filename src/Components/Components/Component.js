@@ -15,7 +15,7 @@ const Component = () => {
         fetch('fakedb.json')
         .then(res => res.json())
         .then(data => setActivities(data))
-    },[])
+    },[]);
 
     
     
@@ -23,10 +23,11 @@ const Component = () => {
         const newInfo = [...info, selectedInfo]
         setInfo(newInfo);
         toast.success('Activity time added successfully');   
-    }
+    };
+    
     
     return (
-        <div className='flex flex-col md:flex-row '>
+        <div className='flex flex-col md:flex-row poppins-fonts'>
             <div className='w-full md:w-3/5 lg:w-3/4 '>
                 <div className='mx-5 lg:mx-24 '>
                     <h1 className='font-bold text-3xl my-8 text-white'>
@@ -48,7 +49,10 @@ const Component = () => {
                 </div>           
             </div>
             <div className='w-full md:w-2/5 lg:w-1/4 bg-gray-200 mt-5 md:mt-0'>
-                <Info info ={info}></Info>
+                <Info 
+                info ={info}
+                // activityCompleted={activityCompleted}
+                ></Info>
             </div>
         </div>
     );

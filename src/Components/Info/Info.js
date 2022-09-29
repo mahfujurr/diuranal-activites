@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './Info.css'
 import image from '../../img/Capture.JPG'
+import { ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Info = ({info}) => {
     const [breakTime, setBreakTime] = useState([]);
@@ -17,10 +20,17 @@ const Info = ({info}) => {
     };
 
     let totalTime = 0;
+
     for (const selectedInfo of info){
         totalTime = totalTime + parseInt(selectedInfo.time);
         
     }
+
+    const activityCompleted = () =>{
+        toast.success('Activity Completed successfully');
+        console.log('clicked')
+    };
+
     return (
         <div className='px-3'>
             <div className='flex items-center'>
@@ -89,7 +99,8 @@ const Info = ({info}) => {
                 </div>
             </div>
             <div className='flex justify-center my-3'>
-                <button className='w-4/5 p-3 rounded-lg bg-rose-500 font-bold text-white hover:bg-rose-600'>Activity Completed <i class="fa-solid fa-circle-arrow-right"></i></button>
+                <button onClick={()=>{activityCompleted()}} className='w-4/5 p-3 rounded-lg bg-rose-500 font-bold text-white hover:bg-rose-600'>Activity Completed <i class="fa-solid fa-circle-arrow-right"></i></button>
+                <ToastContainer />
             </div>
         </div>
     );
